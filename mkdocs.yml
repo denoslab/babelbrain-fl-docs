@@ -1,0 +1,84 @@
+site_name: BabelBrain FL
+site_description: Installation guides and tutorials for the BabelBrain FL testbed on Starfish-FL
+site_url: https://denoslab.github.io/babelbrain-fl-docs/
+repo_url: https://github.com/denoslab/starfish-fl
+repo_name: denoslab/starfish-fl
+edit_uri: ""
+
+theme:
+  name: material
+  icon:
+    logo: material/brain
+    repo: fontawesome/brands/github
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: blue
+      accent: light blue
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: blue
+      accent: light blue
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  features:
+    - navigation.sections
+    - navigation.top
+    - navigation.footer
+    - content.code.copy
+    - content.code.select
+    - content.tabs.link
+    - search.highlight
+
+validation:
+  anchors: warn
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+
+extra_css:
+  - stylesheets/extra.css
+
+nav:
+  - Home: index.md
+  - Getting Started:
+      - Introduction: getting-started/introduction.md
+      - Quick Installation: getting-started/quick-installation.md
+      - First Run: getting-started/first-run.md
+  - Site:
+      - Enrol: site/enrol.md
+      - Check: site/check.md
+      - Start and Stop: site/start-and-stop.md
+      - Change Settings: site/change-settings.md
+      - Update and Remove: site/update-and-remove.md
+  - Main Device:
+      - Introduction: main-device/introduction.md
+      - Enrolment Codes: main-device/enrolment-codes.md
+  - Tutorials:
+      - Introduction: tutorials/introduction.md
+      - A Federated Run on Synthetic Stores: tutorials/synthetic-run.md
+      - Reading the Gate and Approving a Model: tutorials/gate-and-registry.md
+      - Sample Stores from BabelBrain 0.8.8: tutorials/sample-stores.md
+  - References:
+      - Commands: references/commands.md
+      - Settings: references/settings.md
+      - Troubleshooting: references/troubleshooting.md
+      - Release Notes: references/release-notes.md

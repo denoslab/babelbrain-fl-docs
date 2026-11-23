@@ -1,0 +1,69 @@
+/* Testbed diagram on the home page, drawn with the theme's colors to follow the light and dark schemes */
+
+.bbfl-figure {
+  margin: 1.5em auto;
+  text-align: center;
+}
+
+.bbfl-figure figcaption {
+  margin: 0.4em auto 0;
+  max-width: 36rem;
+  color: var(--md-default-fg-color--light);
+  font-size: 0.7rem;
+}
+
+.bbfl-diagram {
+  display: block;
+  width: 100%;
+  max-width: 720px;
+  height: auto;
+  margin: 0 auto;
+}
+
+.bbfl-diagram text {
+  fill: var(--md-default-fg-color--light);
+  font-family: var(--md-text-font-family);
+  font-size: 13px;
+  text-anchor: middle;
+}
+
+.bbfl-diagram .title {
+  fill: var(--md-default-fg-color);
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.bbfl-diagram .box {
+  fill: var(--md-code-bg-color);
+  stroke: var(--md-default-fg-color--lighter);
+  stroke-width: 1.5;
+}
+
+.bbfl-diagram .box.main {
+  stroke: var(--md-primary-fg-color);
+  stroke-width: 2;
+}
+
+.bbfl-diagram .box.coordinator {
+  stroke: var(--md-accent-fg-color);
+  stroke-width: 2;
+}
+
+.bbfl-diagram .link {
+  stroke: var(--md-default-fg-color--light);
+  stroke-width: 1.5;
+}
+
+.bbfl-diagram .arrowhead {
+  fill: var(--md-default-fg-color--light);
+}
+
+.bbfl-diagram .pill {
+  fill: var(--md-default-bg-color);
+  stroke: var(--md-default-fg-color--lighter);
+  stroke-width: 1;
+}
+
+.bbfl-diagram .note {
+  fill: var(--md-default-fg-color);
+}
